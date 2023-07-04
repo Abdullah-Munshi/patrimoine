@@ -498,10 +498,16 @@ header .main-menu.ms-4 {
 .main-menu li.active a {
   color: var(--secondary) !important;
 }
+.mobile-menu-btns .box-btn.border-style {
+  border-color: #fff !important;
+  color: #fff !important;
+}
 .mobile-menu-btns .box-btn.border-style:hover {
-  background-color: #fff;
-  color: var(--secondary);
-  border-color: #fff;
+  background-color: #fff !important;
+  color: var(--secondary) !important;
+}
+.m_menu_outer .language-selector {
+  color: #fff !important;
 }
 /* header css end */
 

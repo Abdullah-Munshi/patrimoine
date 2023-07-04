@@ -217,7 +217,7 @@
                   >Mieux connaître Vaugier<i class="fal fa-angle-down"></i>
                 </a>
                 <ul class="submenu_dropdown submenu position-absolute">
-                  <li>
+                  <li class="active">
                     <a
                       href="qui-sommes-nous-conseiller-gestion-patrimoine.html"
                     >
@@ -388,7 +388,7 @@
               >Nous contacter</a
             >
             <div
-              class="language-selector position-relative d-flex align-items-center justify-content-end"
+              class="language-selector position-relative d-none d-xl-flex align-items-center justify-content-end"
             >
               <i class="fal fa-globe"></i>
               <select id="language">
@@ -408,6 +408,17 @@
 
       <div class="m_menu_outer">
         <div class="m_menu_inner">
+          <div
+            class="language-selector position-relative d-inline-flex align-items-center"
+          >
+            <i class="fal fa-globe"></i>
+            <select id="language-m">
+              <option value="En" data-img="assets/img/gb.svg" selected>
+                English
+              </option>
+              <option value="fr" data-img="assets/img/fr.svg">French</option>
+            </select>
+          </div>
           <ul class="m-menu">
             <li>
               <a
@@ -598,15 +609,42 @@
           </ul>
 
           <div class="mobile-menu-btns pb-4">
+            <div class="with_dropdown d-block position-relative pb-1">
+              <a
+                class="box-btn bg_primary size-2 w-100 text-decoration-none text-uppercase"
+                data-bs-toggle="collapse"
+                href="#collapse-pk-1"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapse1"
+                >Cashback pocket listings
+              </a>
+              <div id="collapse-pk-1" class="collapse mt-1">
+                <ul class="submenu_dropdown submenu mt">
+                  <li>
+                    <a href="#"> Qui sommes-nous ? </a>
+                  </li>
+                  <li>
+                    <a href="#"> Notre démarche en 8 étapes </a>
+                  </li>
+                  <li>
+                    <a href="#"> Une offre sur mesure </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      5 bonnes raisons de choisir Vaugier Patrimoine
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"> Nos statuts et certifications </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <a
               href="#"
               class="box-btn size-2 d-block text-center border-style text-decoration-none text-uppercase"
               >MoneyPitch</a
-            >
-            <a
-              href="#"
-              class="box-btn size-2 d-block text-center text-decoration-none me-0 text-uppercase"
-              >Nous contacter</a
             >
           </div>
         </div>

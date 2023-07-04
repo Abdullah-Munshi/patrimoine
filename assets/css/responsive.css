@@ -23,6 +23,9 @@
     margin-right: 25px;
     margin-left: 0;
   }
+  .custom_row {
+    justify-content: space-between;
+  }
 }
 
 @media screen and (max-width: 991px) {

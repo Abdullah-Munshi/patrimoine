@@ -359,11 +359,11 @@ header .box-btn {
   width: 336px !important;
 }
 .custom_row {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto 20px 372px;
-  grid-template-columns: auto 372px;
-  grid-gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+.header-right {
+  margin-left: 115px;
 }
 .stuck .main-menu li a,
 header.type-2 .main-menu li a {

@@ -20,11 +20,16 @@
     width: 100px;
   }
   .language-selector {
-    margin-right: 25px;
+    margin-right: 0;
     margin-left: 0;
+    margin-bottom: 10px;
   }
   .custom_row {
     justify-content: space-between;
+  }
+  .language-selector .bv_ul_inner {
+    left: 0;
+    right: auto;
   }
 }
 

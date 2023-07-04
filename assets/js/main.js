@@ -32,4 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
     selector: "#language",
     width: "100%",
   });
+  let languageM = new BVSelect({
+    selector: "#language-m",
+    width: "100%",
+  });
 });

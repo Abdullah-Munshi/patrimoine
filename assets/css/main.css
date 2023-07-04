@@ -294,7 +294,7 @@ header .box-btn {
   top: 100%;
   right: 0;
   height: 100vh;
-  padding: 80px 20px 20px 20px;
+  padding: 31px 20px 20px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -349,6 +349,9 @@ header .box-btn {
 }
 .mobile-menu-btns .box-btn {
   margin-top: 15px;
+  line-height: 1;
+  padding-bottom: 14px;
+  padding-top: 15px;
 }
 .m_menu_outer .m-menu {
   margin-bottom: 30px;
@@ -356,7 +359,7 @@ header .box-btn {
 .m_menu_outer .submenu {
   opacity: 1 !important;
   visibility: visible !important;
-  width: 336px !important;
+  width: 100% !important;
 }
 .custom_row {
   display: flex;
@@ -383,6 +386,11 @@ header.type-2 .main-menu li a {
 }
 [data-bs-toggle] {
   position: relative;
+}
+.mobile-menu-btns .with_dropdown .box-btn::after {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 9px;
 }
 .submenu-m li a {
   text-transform: capitalize;

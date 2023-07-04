@@ -155,7 +155,7 @@ header.type-2 .box-btn.border-style:hover {
   color: #fff;
 }
 .header-right a:not(:last-child) {
-  margin-right: 15px;
+  margin-right: 20px;
 }
 header .box-btn {
   padding-left: 15px;
@@ -361,8 +361,8 @@ header .box-btn {
 .custom_row {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 20px 365px;
-  grid-template-columns: auto 365px;
+  -ms-grid-columns: auto 20px 372px;
+  grid-template-columns: auto 372px;
   grid-gap: 20px;
 }
 .stuck .main-menu li a,
@@ -422,7 +422,7 @@ body.extra {
   overflow: hidden;
 }
 .language-selector {
-  margin-left: 15px;
+  margin-left: 20px;
   color: #fff;
   font-family: var(--roboto);
   z-index: 0;

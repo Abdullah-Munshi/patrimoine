@@ -809,11 +809,6 @@ section {
   text-decoration: none;
   font-size: 14px;
 }
-
-.ft-links li a:hover {
-  text-decoration: underline;
-}
-
 .ft-links li:not(:last-child) {
   margin-bottom: 8px;
 }

@@ -773,9 +773,10 @@ section {
   grid-template-columns: 1.5fr 1.8fr 0.8fr;
   grid-gap: 30px;
   padding: 60px 0;
-  align-items: center;
 }
-
+.footer-top-content .footer-widget:not(:first-child) {
+  margin-top: 62px;
+}
 .footer-widget h4 {
   color: var(--primaryBlack);
   font-size: 18px;

@@ -454,7 +454,7 @@ header .main-menu.ms-4 {
 }
 .linkhead {
   color: #171819 !important;
-  font-weight: bold !important;
+  font-weight: 500 !important;
   text-transform: uppercase !important;
 }
 .submenu-m .linkhead {

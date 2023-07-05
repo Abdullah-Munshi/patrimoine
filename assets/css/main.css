@@ -1731,4 +1731,76 @@ header.type-2
   margin-left: -2px;
   margin-right: -2px;
 }
+
+.crud {
+  padding: 8px 9px;
+}
+.wishlist {
+  border: 0;
+  background: transparent;
+  line-height: 1;
+  color: #fff;
+  transition: 0.3s;
+}
+.wishlist:hover {
+  transform: scale(1.09);
+}
+.wishlist:hover i {
+  color: var(--secondary);
+}
+.wishlist i {
+  font-weight: 500;
+  transition: 0.3s;
+  font-size: 20px;
+}
+.prt-img img {
+  border-radius: 5px;
+}
+
+.prt-content h6 {
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+.prt-content p.address {
+  font-size: 13px;
+  color: var(--primaryBlack);
+}
+.prt-content .price {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+.prt-content {
+  margin-top: 8px;
+}
+
+.cmn-list.type-5 li:not(:last-child) {
+  margin-bottom: 12px;
+}
+.ls p.ls-title {
+  margin-bottom: 10px;
+}
+.proparty-info-rw .quaternary-title {
+  color: var(--secondary);
+}
+.enquiry-form {
+  background-color: var(--primaryLight);
+  padding: 34px;
+  border-radius: 5px;
+}
+.policy-terms {
+  margin-top: 14px;
+}
+.policy-terms a {
+  color: var(--secondary);
+  font-weight: 400;
+}
+.policy-terms a:hover {
+  color: var(--primary);
+}
+.enquiry-form .secondary-title {
+  font-size: 30px;
+}
+.des_cription {
+  margin-bottom: 80px;
+}
 /* details page css end */

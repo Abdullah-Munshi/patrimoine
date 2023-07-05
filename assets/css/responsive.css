@@ -288,4 +288,7 @@
   .legal-page-content {
     margin-bottom: 50px;
   }
+  .footer-top-content .footer-widget:not(:first-child) {
+    margin-top: 0;
+  }
 }

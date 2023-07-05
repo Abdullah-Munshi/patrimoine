@@ -1677,3 +1677,58 @@ header.type-2
 }
 
 /* pocket-listing page css end */
+
+/* details page css start  */
+.proparty_carousel_thumbnails .thumbnail {
+  width: calc((100% - 90px) / 7);
+  opacity: 0.5;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+.proparty_carousel_thumbnails .thumbnail.is-active {
+  opacity: 1;
+  border-color: var(--secondary);
+}
+.proparty_carousel_thumbnails .thumbnail:not(:last-child) {
+  margin-right: 15px;
+}
+.proparty-info-rw {
+  border-top: 1px solid rgb(238, 240, 241);
+  padding: 24px 0;
+}
+.property-short-info .price {
+  font-size: 34px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.facility {
+  margin-bottom: 10px;
+}
+.facility li {
+  font-size: 20px;
+  color: var(--primaryBlack);
+  display: inline-block;
+}
+.facility li:not(:last-child) {
+  margin-right: 45px;
+}
+.facility li i {
+  margin-right: 6px;
+  color: var(--secondary);
+}
+.property-area .address {
+  font-size: 20px;
+}
+.property-area .address i {
+  margin-right: 6px;
+  color: var(--secondary);
+}
+.property-short-info {
+  padding: 24px 0;
+}
+.proparty_carousel_thumbnails {
+  margin-top: 15px;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+/* details page css end */

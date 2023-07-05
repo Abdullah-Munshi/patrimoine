@@ -495,7 +495,8 @@ header .main-menu.ms-4 {
 .submenu-m ul ul > li:hover:before {
   opacity: 1;
 }
-.main-menu li.active a {
+.main-menu li.active a,
+.submenu li.active a {
   color: var(--secondary) !important;
 }
 .mobile-menu-btns .box-btn.border-style {
@@ -1684,6 +1685,8 @@ header.type-2
   opacity: 0.5;
   transition: 0.3s;
   border: 2px solid transparent;
+  border-radius: 6px;
+  overflow: hidden;
 }
 .proparty_carousel_thumbnails .thumbnail.is-active {
   opacity: 1;
@@ -1797,10 +1800,61 @@ header.type-2
 .policy-terms a:hover {
   color: var(--primary);
 }
-.enquiry-form .secondary-title {
-  font-size: 30px;
+.enquiry-form .secondary-title,
+.thirty {
+  font-size: 30px !important;
 }
 .des_cription {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
+}
+.property-area {
+  padding-bottom: 60px;
+}
+.quaternary-title .sub {
+  font-size: 14px;
+  color: var(--primaryBlack);
+  margin-top: 5px;
+}
+
+.sidebar-blk {
+  border: 1px solid rgb(238, 240, 241);
+  padding: 24px;
+  border-radius: 5px;
+}
+.enquiry-contact-wrap .logo {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(238, 240, 241);
+  padding-bottom: 24px;
+}
+.sidebar-blk .logo img {
+  width: 185px;
+}
+.enquire-ct li a {
+  display: block;
+  border-color: var(--secondary);
+  background-color: var(--secondary);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 15px;
+  text-decoration: none;
+  text-align: center;
+}
+.enquire-ct li a i {
+  margin-right: 6px;
+}
+.enquire-ct li:not(:last-child) {
+  margin-bottom: 13px;
+}
+.enquire-ct li:nth-child(2) a {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+.licence-no strong {
+  font-weight: 500;
 }
 /* details page css end */

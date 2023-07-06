@@ -56,3 +56,12 @@ dataExpandToggle.forEach((each) => {
     }
   });
 });
+
+if (document.querySelector("[data-phoneNumber]") !== null) {
+  let phoneNumberElement = document.querySelector("[data-phoneNumber]");
+  phoneNumberElement.addEventListener("click", function (e) {
+    e.preventDefault();
+    console.log(phoneNumberElement.dataset);
+    phoneNumberElement.innerHTML = phoneNumberElement.dataset.phonenumber;
+  });
+}

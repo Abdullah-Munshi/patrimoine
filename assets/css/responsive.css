@@ -291,4 +291,22 @@
   .footer-top-content .footer-widget:not(:first-child) {
     margin-top: 0;
   }
+  .enquiry-form {
+    padding: 30px 15px;
+  }
+  .facility li {
+    font-size: 18px;
+  }
+  .facility li:not(:last-child) {
+    margin-right: 34px;
+  }
+  .property-area .address {
+    font-size: 18px;
+  }
+  .property-short-info .price {
+    font-size: 28px;
+  }
+  .property-area {
+    padding-bottom: 45px;
+  }
 }

@@ -37,3 +37,22 @@ document.addEventListener("DOMContentLoaded", function () {
     width: "100%",
   });
 });
+
+const dataExpandToggle = document.querySelectorAll("[data-expand-toggle]");
+dataExpandToggle.forEach((each) => {
+  each.addEventListener("click", function (e) {
+    e.preventDefault();
+    const expandableElement = document.getElementById(
+      each.dataset.expandToggle.split("#")[1]
+    );
+    if (each.dataset.state === "shirnked") {
+      each.dataset.state = "expanded";
+      expandableElement.classList.add("expanded");
+      each.innerHTML = "Show less description";
+    } else if (each.dataset.state === "expanded") {
+      each.dataset.state = "shirnked";
+      expandableElement.classList.remove("expanded");
+      each.innerHTML = "Show full description";
+    }
+  });
+});

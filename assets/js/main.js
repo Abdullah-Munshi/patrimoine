@@ -63,22 +63,33 @@ document.addEventListener("DOMContentLoaded", function () {
     let phoneNumberElement = document.querySelector("[data-phoneNumber]");
     phoneNumberElement.addEventListener("click", function (e) {
       e.preventDefault();
-      console.log(phoneNumberElement.dataset);
       phoneNumberElement.innerHTML = phoneNumberElement.dataset.phonenumber;
     });
   }
 
+  // Script for Payment breakdown graph
+  function paymentBreakdownGraph(id) {
+    if (document.querySelector(id) !== null) {
+      const bar = document.querySelector(id);
+      const amountDiv = bar.querySelector(".graph-rw-inner");
+      const value = parseInt(bar.dataset.value);
+      amountDiv.style.width = `${value}%`;
+    }
+  }
+
+  paymentBreakdownGraph("#payment_breakdown_bar");
+
   // Script for circle graph
-  function halfCircleGraph(id, value = 0) {
+  function halfCircleGraph(id) {
     if (document.querySelector(id) !== null) {
       const halfCircle = document.querySelector(id);
       const amountDiv = halfCircle.querySelector(".parcentage");
       const dotHandle = halfCircle.querySelector(".dot_handle");
+      const value = parseInt(halfCircle.dataset.value);
       dotHandle.style.transform = `rotate(${value * 1.8}deg)`;
       amountDiv.innerHTML = `${value}%`;
-      console.log(value);
     }
   }
 
-  halfCircleGraph("#half-cirle-graph", 17);
+  halfCircleGraph("#half-cirle-graph");
 }); // End line

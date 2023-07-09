@@ -65,3 +65,16 @@ if (document.querySelector("[data-phoneNumber]") !== null) {
     phoneNumberElement.innerHTML = phoneNumberElement.dataset.phonenumber;
   });
 }
+
+function halfCircleGraph(id, value = 0) {
+  if (document.querySelector(id) !== null) {
+    const halfCircle = document.querySelector(id);
+    const amountDiv = halfCircle.querySelector(".parcentage");
+    const dotHandle = halfCircle.querySelector(".dot_handle");
+    dotHandle.style.transform = `rotate(${value * 1.8}deg)`;
+    amountDiv.innerHTML = `${value}%`;
+    console.log(value);
+  }
+}
+
+halfCircleGraph("#half-cirle-graph", 17);

@@ -36,45 +36,49 @@ document.addEventListener("DOMContentLoaded", function () {
     selector: "#language-m",
     width: "100%",
   });
-});
 
-const dataExpandToggle = document.querySelectorAll("[data-expand-toggle]");
-dataExpandToggle.forEach((each) => {
-  each.addEventListener("click", function (e) {
-    e.preventDefault();
-    const expandableElement = document.getElementById(
-      each.dataset.expandToggle.split("#")[1]
-    );
-    if (each.dataset.state === "shirnked") {
-      each.dataset.state = "expanded";
-      expandableElement.classList.add("expanded");
-      each.innerHTML = "Show less description";
-    } else if (each.dataset.state === "expanded") {
-      each.dataset.state = "shirnked";
-      expandableElement.classList.remove("expanded");
-      each.innerHTML = "Show full description";
-    }
-  });
-});
-
-if (document.querySelector("[data-phoneNumber]") !== null) {
-  let phoneNumberElement = document.querySelector("[data-phoneNumber]");
-  phoneNumberElement.addEventListener("click", function (e) {
-    e.preventDefault();
-    console.log(phoneNumberElement.dataset);
-    phoneNumberElement.innerHTML = phoneNumberElement.dataset.phonenumber;
-  });
-}
-
-function halfCircleGraph(id, value = 0) {
-  if (document.querySelector(id) !== null) {
-    const halfCircle = document.querySelector(id);
-    const amountDiv = halfCircle.querySelector(".parcentage");
-    const dotHandle = halfCircle.querySelector(".dot_handle");
-    dotHandle.style.transform = `rotate(${value * 1.8}deg)`;
-    amountDiv.innerHTML = `${value}%`;
-    console.log(value);
+  // Script for show/hide content in property info
+  if (document.querySelectorAll("[data-expand-toggle]") !== null) {
+    const dataExpandToggle = document.querySelectorAll("[data-expand-toggle]");
+    dataExpandToggle.forEach((each) => {
+      each.addEventListener("click", function (e) {
+        e.preventDefault();
+        const expandableElement = document.getElementById(
+          each.dataset.expandToggle.split("#")[1]
+        );
+        if (each.dataset.state === "shirnked") {
+          each.dataset.state = "expanded";
+          expandableElement.classList.add("expanded");
+          each.innerHTML = "Show less description";
+        } else if (each.dataset.state === "expanded") {
+          each.dataset.state = "shirnked";
+          expandableElement.classList.remove("expanded");
+          each.innerHTML = "Show full description";
+        }
+      });
+    });
   }
-}
 
-halfCircleGraph("#half-cirle-graph", 17);
+  if (document.querySelector("[data-phoneNumber]") !== null) {
+    let phoneNumberElement = document.querySelector("[data-phoneNumber]");
+    phoneNumberElement.addEventListener("click", function (e) {
+      e.preventDefault();
+      console.log(phoneNumberElement.dataset);
+      phoneNumberElement.innerHTML = phoneNumberElement.dataset.phonenumber;
+    });
+  }
+
+  // Script for circle graph
+  function halfCircleGraph(id, value = 0) {
+    if (document.querySelector(id) !== null) {
+      const halfCircle = document.querySelector(id);
+      const amountDiv = halfCircle.querySelector(".parcentage");
+      const dotHandle = halfCircle.querySelector(".dot_handle");
+      dotHandle.style.transform = `rotate(${value * 1.8}deg)`;
+      amountDiv.innerHTML = `${value}%`;
+      console.log(value);
+    }
+  }
+
+  halfCircleGraph("#half-cirle-graph", 17);
+}); // End line

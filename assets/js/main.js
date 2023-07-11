@@ -92,4 +92,109 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   halfCircleGraph("#half-cirle-graph");
+
+  // Form Validation (Enquiry Form)
+
+  class FormValidator {
+    constructor(form) {
+      this.form = form;
+      this.inputs = Array.from(this.form.elements).filter(
+        (element) => element.type !== "submit"
+      );
+      this.errors = {};
+      this.setupEventListeners();
+    }
+
+    setupEventListeners() {
+      this.inputs.forEach((input) => {
+        input.addEventListener("input", () => {
+          this.validateInput(input);
+          this.displayErrors();
+        });
+      });
+
+      this.form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        if (this.validate()) {
+          this.form.submit();
+        } else {
+          this.displayErrors();
+        }
+      });
+    }
+
+    validateInput(input) {
+      const { name, value } = input;
+      const validationRule = this.getValidationRule(name);
+
+      if (validationRule && !validationRule.regex.test(value)) {
+        this.errors[name] = validationRule.warningText;
+      } else {
+        delete this.errors[name];
+      }
+    }
+
+    validate() {
+      this.errors = {};
+
+      this.inputs.forEach((input) => {
+        this.validateInput(input);
+      });
+
+      return Object.keys(this.errors).length === 0;
+    }
+
+    getValidationRule(fieldName) {
+      const rules = {
+        message: {
+          regex: /\S/,
+          warningText: "Oops! you forgot to write a message",
+        },
+        name: {
+          regex: /^[a-zA-Z0-9_]{3,16}$/,
+          warningText: "Oops! you forgot to fill in your name",
+        },
+        email: {
+          regex: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+          warningText: "Oops! you forgot to fill in your email.",
+        },
+        phone: {
+          regex:
+            /^\+\d{1,3}\s?(\(\d{1,3}\))?\s?\d{1,4}[-\s]?\d{1,4}[-\s]?\d{1,9}$/,
+          warningText: "Oops! you forgot to fill in your phone",
+        },
+      };
+
+      return rules[fieldName];
+    }
+
+    displayErrors() {
+      this.inputs.forEach((input) => {
+        const { name } = input;
+        const errorContainer = input.parentNode.querySelector(".error-message");
+
+        if (this.errors[name]) {
+          if (!errorContainer) {
+            const errorElement = document.createElement("div");
+            errorElement.classList.add("error-message");
+            errorElement.innerText = this.errors[name];
+            input.parentNode.insertBefore(errorElement, input.nextSibling);
+            input.parentNode.classList.add("invalid");
+          }
+        } else {
+          if (errorContainer) {
+            errorContainer.remove();
+            input.parentNode.classList.remove("invalid");
+          }
+        }
+      });
+    }
+  }
+
+  // Form validator object
+  if (document.getElementById("enquiry_form") !== null) {
+    const form = document.getElementById("enquiry_form");
+    const enquiryForm = new FormValidator(form);
+  }
 }); // End line

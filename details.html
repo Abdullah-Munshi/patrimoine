@@ -1299,6 +1299,22 @@
                   </div>
                 </div>
               </div>
+              <div class="virtual-wrap">
+                <div>
+                  <h5 class="quaternary-title">Virtual Viewings New</h5>
+                  <p class="m-0">
+                    View apartments from the comfort of your home
+                  </p>
+                </div>
+
+                <div class="text-end">
+                  <a
+                    href="#"
+                    class="box-btn size-2 border-style view-video text-decoration-none d-inline-block"
+                    ><i class="fal fa-video me-2"></i>View Video</a
+                  >
+                </div>
+              </div>
 
               <div class="des_cription">
                 <div class="property-short-info">
@@ -1464,37 +1480,64 @@
                 <div class="proparty-info-rw">
                   <div class="cmn-content">
                     <h4 class="quaternary-title">Inquiry</h4>
+                    <div id="errorContainer"></div>
 
-                    <form action="#" class="enquiry-form">
+                    <form action="#" class="enquiry-form" id="enquiry_form">
                       <div class="section-title text-center mb-4">
                         <h2 class="secondary-title">Envoyez-nous un message</h2>
                       </div>
                       <div class="input-inside">
-                        <label for="">Your message</label>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <label for="message"
+                          >Your message<span class="required-sign"
+                            >*</span
+                          ></label
+                        >
+                        <textarea
+                          name="message"
+                          id="message"
+                          cols="30"
+                          rows="10"
+                          placeholder="message"
+                        ></textarea>
                       </div>
                       <div class="input-inside">
-                        <label for="">
+                        <label for="name">
                           Nom <span class="required-sign">*</span></label
                         >
-                        <input type="text" />
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          placeholder="name"
+                        />
                       </div>
                       <div class="input-inside">
-                        <label for="">
+                        <label for="email">
                           Email <span class="required-sign">*</span></label
                         >
-                        <input type="text" />
+                        <input
+                          type="text"
+                          id="email"
+                          name="email"
+                          placeholder="example@gmail.com"
+                        />
                       </div>
                       <div class="input-inside">
-                        <label for="">
+                        <label for="phone">
                           Prénom <span class="required-sign">*</span></label
                         >
-                        <input type="text" />
+                        <input
+                          type="text"
+                          id="phone"
+                          name="phone"
+                          placeholder="+88 ..."
+                        />
                       </div>
                       <div class="text-center">
                         <button
                           type="submit"
                           class="box-btn size-2 send-btn min-w-150 text-uppercase"
+                          id="submit_btn"
                         >
                           Inquire Now
                         </button>
@@ -1767,7 +1810,25 @@
                     </div>
 
                     <div class="markup-index-wrap">
-                      <h5 class="quaternary-title mb-3">Markup Value Index</h5>
+                      <h5
+                        class="quaternary-title d-inline-flex align-items-centerb-3"
+                      >
+                        Markup Value Index
+                        <button
+                          class="tooltip_trigger position-relative bg-transparent border-0 ms-2 px-0"
+                        >
+                          <i class="fal fa-info-circle"></i>
+
+                          <div class="tooltip_content position-absolute">
+                            <p>
+                              Lorem ipsum dolor sit amet consectetur adipisicing
+                              elit. Voluptatem consectetur qui amet voluptatum
+                              soluta totam earum dolorem officiis voluptate
+                              nisi.
+                            </p>
+                          </div>
+                        </button>
+                      </h5>
                       <div
                         id="half-cirle-graph"
                         data-value="17"

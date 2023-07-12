@@ -2197,4 +2197,15 @@ header.type-2
 .input-inside.invalid textarea {
   border-color: rgb(255, 52, 87);
 }
+.three_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+.modal-dialog.max_w_350 {
+  max-width: 350px;
+}
+.box-btn.pad-2 {
+  padding: 10px 20px;
+}
 /* details page css end */

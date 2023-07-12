@@ -94,7 +94,6 @@ document.addEventListener("DOMContentLoaded", function () {
   halfCircleGraph("#half-cirle-graph");
 
   // Form Validation (Enquiry Form)
-
   class FormValidator {
     constructor(form) {
       this.form = form;
@@ -103,6 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
       );
       this.errors = {};
       this.setupEventListeners();
+      this.submitBtn = this.form.querySelector('button[type="submit"]');
     }
 
     setupEventListeners() {
@@ -117,7 +117,10 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
 
         if (this.validate()) {
-          this.form.submit();
+          // If form valid then ....
+
+          // bootstrap modal open
+          new bootstrap.Modal(document.getElementById("access")).show();
         } else {
           this.displayErrors();
         }

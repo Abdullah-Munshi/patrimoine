@@ -87,6 +87,48 @@
       </div>
     </div>
 
+    <div
+      class="modal fade"
+      id="access"
+      tabindex="-1"
+      aria-labelledby="access"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered max_w_350">
+        <div class="modal-content border-0">
+          <div class="modal-header px-4 py-3">
+            <h3 class="modal-title quaternary-title mb-0" id="trucheck">
+              Confirmation
+            </h3>
+            <button
+              type="button"
+              class="modal_close bg-transparent border-0"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fal fa-times fs-3"></i>
+            </button>
+          </div>
+          <div class="modal-body p-0">
+            <div class="trucheck-modal-content p-4">
+              <div class="cmn-content text-center">
+                <p>
+                  You must to login first to get access it.
+                 <div class="d-block">
+                  <a
+                  href="cashback.html"
+                  class="box-btn size-2 pad-2 text-uppercase text-decoration-none d-inline-block"
+                  >Login Here</a
+                >
+                 </div>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Modal Markup End -->
     <div class="sticky-target"></div>
     <div class="overlay"></div>
@@ -712,6 +754,8 @@
               <nav
                 aria-label="breadcrumb"
                 class="breadcrumb-wrap level_with_right_col"
+                data-bs-toggle="modal"
+                data-bs-target="#access"
               >
                 <ol class="breadcrumb mb-0">
                   <li class="breadcrumb-item"><a href="#">Abu Dhabi</a></li>
@@ -747,7 +791,10 @@
                           <div
                             class="crud style-2 d-inline-flex justify-content-end position-absolute end-0 top-0"
                           >
-                            <button>
+                            <button
+                              data-bs-toggle="modal"
+                              data-bs-target="#access"
+                            >
                               <i class="fal fa-heart"></i> Favorite
                             </button>
                             <button>
@@ -1565,208 +1612,120 @@
                 <div class="section-title mb-4">
                   <h2 class="secondary-title thirty">Similar Properties</h2>
                 </div>
-                <div id="proparty-carousel-2" class="splide property-gallery">
-                  <div class="splide__track">
-                    <ul class="splide__list">
-                      <li class="splide__slide">
-                        <a href="#" class="d-block text-decoration-none">
-                          <div class="prt-item">
-                            <div class="prt-img text-center position-relative">
-                              <img
-                                src="assets/img/prt-1.jpg"
-                                alt=""
-                                class="img-fluid"
-                              />
+                <div class="row">
+                  <div class="col-md-4 mb-4 mb-md-0">
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#access"
+                      class="d-block text-decoration-none"
+                    >
+                      <div class="prt-item">
+                        <div class="prt-img text-center position-relative">
+                          <img
+                            src="assets/img/prt-1.jpg"
+                            alt=""
+                            class="img-fluid"
+                          />
 
-                              <div class="crud position-absolute end-0 top-0">
-                                <button class="scale">
-                                  <i class="fal fa-heart"></i>
-                                </button>
-                              </div>
-                            </div>
-                            <div class="prt-content">
-                              <h5 class="price">
-                                <span class="currency-symbol">$</span>50000
-                              </h5>
-                              <h6 class="text-truncate">
-                                HOT OFFER IN BRIDGES| 3 ROOM WITH MAID + STORE
-                              </h6>
-                              <p class="address mb-0">
-                                <strong
-                                  ><i class="fas fa-map-marker-alt"></i>The Gate
-                                  Tower, Shams Gate District</strong
-                                >
-                              </p>
-                            </div>
+                          <div class="crud position-absolute end-0 top-0">
+                            <button class="scale">
+                              <i class="fal fa-heart"></i>
+                            </button>
                           </div>
-                        </a>
-                      </li>
-                      <li class="splide__slide">
-                        <a href="#" class="d-block text-decoration-none">
-                          <div class="prt-item">
-                            <div class="prt-img text-center position-relative">
-                              <img
-                                src="assets/img/prt-2.jpg"
-                                alt=""
-                                class="img-fluid"
-                              />
+                        </div>
+                        <div class="prt-content">
+                          <h5 class="price">
+                            <span class="currency-symbol">$</span>50000
+                          </h5>
+                          <h6 class="text-truncate">
+                            HOT OFFER IN BRIDGES| 3 ROOM WITH MAID + STORE
+                          </h6>
+                          <p class="address mb-0">
+                            <strong
+                              ><i class="fas fa-map-marker-alt"></i>The Gate
+                              Tower, Shams Gate District</strong
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-4 mb-4 mb-md-0">
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#access"
+                      class="d-block text-decoration-none"
+                    >
+                      <div class="prt-item">
+                        <div class="prt-img text-center position-relative">
+                          <img
+                            src="assets/img/prt-2.jpg"
+                            alt=""
+                            class="img-fluid"
+                          />
 
-                              <div class="crud position-absolute end-0 top-0">
-                                <button class="scale">
-                                  <i class="fal fa-heart"></i>
-                                </button>
-                              </div>
-                            </div>
-                            <div class="prt-content">
-                              <h5 class="price">
-                                <span class="currency-symbol">$</span>50000
-                              </h5>
-                              <h6 class="text-truncate">
-                                HOT OFFER IN BRIDGES| 3 ROOM WITH MAID + STORE
-                              </h6>
-                              <p class="address mb-0">
-                                <strong
-                                  ><i class="fas fa-map-marker-alt"></i>The Gate
-                                  Tower, Shams Gate District</strong
-                                >
-                              </p>
-                            </div>
+                          <div class="crud position-absolute end-0 top-0">
+                            <button class="scale">
+                              <i class="fal fa-heart"></i>
+                            </button>
                           </div>
-                        </a>
-                      </li>
-                      <li class="splide__slide">
-                        <a href="#" class="d-block text-decoration-none">
-                          <div class="prt-item">
-                            <div class="prt-img text-center position-relative">
-                              <img
-                                src="assets/img/prt-3.jpg"
-                                alt=""
-                                class="img-fluid"
-                              />
+                        </div>
+                        <div class="prt-content">
+                          <h5 class="price">
+                            <span class="currency-symbol">$</span>50000
+                          </h5>
+                          <h6 class="text-truncate">
+                            HOT OFFER IN BRIDGES| 3 ROOM WITH MAID + STORE
+                          </h6>
+                          <p class="address mb-0">
+                            <strong
+                              ><i class="fas fa-map-marker-alt"></i>The Gate
+                              Tower, Shams Gate District</strong
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-4 mb-4 mb-md-0">
+                    <a
+                      href="#"
+                      data-bs-toggle="modal"
+                      data-bs-target="#access"
+                      class="d-block text-decoration-none"
+                    >
+                      <div class="prt-item">
+                        <div class="prt-img text-center position-relative">
+                          <img
+                            src="assets/img/prt-3.jpg"
+                            alt=""
+                            class="img-fluid"
+                          />
 
-                              <div class="crud position-absolute end-0 top-0">
-                                <button class="scale">
-                                  <i class="fal fa-heart"></i>
-                                </button>
-                              </div>
-                            </div>
-                            <div class="prt-content">
-                              <h5 class="price">
-                                <span class="currency-symbol">$</span>50000
-                              </h5>
-                              <h6 class="text-truncate">
-                                HOT OFFER IN BRIDGES| 3 ROOM WITH MAID + STORE
-                              </h6>
-                              <p class="address mb-0">
-                                <strong
-                                  ><i class="fas fa-map-marker-alt"></i>The Gate
-                                  Tower, Shams Gate District</strong
-                                >
-                              </p>
-                            </div>
+                          <div class="crud position-absolute end-0 top-0">
+                            <button class="scale">
+                              <i class="fal fa-heart"></i>
+                            </button>
                           </div>
-                        </a>
-                      </li>
-                      <li class="splide__slide">
-                        <a href="#" class="d-block text-decoration-none">
-                          <div class="prt-item">
-                            <div class="prt-img text-center position-relative">
-                              <img
-                                src="assets/img/prt-4.jpg"
-                                alt=""
-                                class="img-fluid"
-                              />
-
-                              <div class="crud position-absolute end-0 top-0">
-                                <button class="scale">
-                                  <i class="fal fa-heart"></i>
-                                </button>
-                              </div>
-                            </div>
-                            <div class="prt-content">
-                              <h5 class="price">
-                                <span class="currency-symbol">$</span>50000
-                              </h5>
-                              <h6 class="text-truncate">
-                                HOT OFFER IN BRIDGES| 3 ROOM WITH MAID + STORE
-                              </h6>
-                              <p class="address mb-0">
-                                <strong
-                                  ><i class="fas fa-map-marker-alt"></i>The Gate
-                                  Tower, Shams Gate District</strong
-                                >
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="splide__slide">
-                        <a href="#" class="d-block text-decoration-none">
-                          <div class="prt-item">
-                            <div class="prt-img text-center position-relative">
-                              <img
-                                src="assets/img/prt-5.jpg"
-                                alt=""
-                                class="img-fluid"
-                              />
-
-                              <div class="crud position-absolute end-0 top-0">
-                                <button class="scale">
-                                  <i class="fal fa-heart"></i>
-                                </button>
-                              </div>
-                            </div>
-                            <div class="prt-content">
-                              <h5 class="price">
-                                <span class="currency-symbol">$</span>50000
-                              </h5>
-                              <h6 class="text-truncate">
-                                HOT OFFER IN BRIDGES| 3 ROOM WITH MAID + STORE
-                              </h6>
-                              <p class="address mb-0">
-                                <strong
-                                  ><i class="fas fa-map-marker-alt"></i>The Gate
-                                  Tower, Shams Gate District</strong
-                                >
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="splide__slide">
-                        <a href="#" class="d-block text-decoration-none">
-                          <div class="prt-item">
-                            <div class="prt-img text-center position-relative">
-                              <img
-                                src="assets/img/prt-6.jpg"
-                                alt=""
-                                class="img-fluid"
-                              />
-
-                              <div class="crud position-absolute end-0 top-0">
-                                <button class="scale">
-                                  <i class="fal fa-heart"></i>
-                                </button>
-                              </div>
-                            </div>
-                            <div class="prt-content">
-                              <h5 class="price">
-                                <span class="currency-symbol">$</span>50000
-                              </h5>
-                              <h6 class="text-truncate">
-                                HOT OFFER IN BRIDGES| 3 ROOM WITH MAID + STORE
-                              </h6>
-                              <p class="address mb-0">
-                                <strong
-                                  ><i class="fas fa-map-marker-alt"></i>The Gate
-                                  Tower, Shams Gate District</strong
-                                >
-                              </p>
-                            </div>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
+                        </div>
+                        <div class="prt-content">
+                          <h5 class="price">
+                            <span class="currency-symbol">$</span>50000
+                          </h5>
+                          <h6 class="text-truncate">
+                            HOT OFFER IN BRIDGES| 3 ROOM WITH MAID + STORE
+                          </h6>
+                          <p class="address mb-0">
+                            <strong
+                              ><i class="fas fa-map-marker-alt"></i>The Gate
+                              Tower, Shams Gate District</strong
+                            >
+                          </p>
+                        </div>
+                      </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1811,7 +1770,7 @@
 
                     <div class="markup-index-wrap">
                       <h5
-                        class="quaternary-title d-inline-flex align-items-centerb-3"
+                        class="quaternary-title d-flex justify-content-center mx-auto"
                       >
                         Markup Value Index
                         <button
@@ -1886,6 +1845,8 @@
                       <li>
                         <a
                           href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#access"
                           data-phoneNumber="+8801785269946"
                           class="box-btn"
                           ><i class="fal fa-phone-volume"></i>Show Phone
@@ -1893,12 +1854,20 @@
                         >
                       </li>
                       <li>
-                        <a href="#" class="box-btn"
+                        <a
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#access"
+                          class="box-btn"
                           ><i class="fas fa-envelope"></i>Inquire Now</a
                         >
                       </li>
                       <li>
-                        <a href="#" class="box-btn whatsapp"
+                        <a
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#access"
+                          class="box-btn whatsapp"
                           ><i class="fab fa-whatsapp"></i>WhatsApp</a
                         >
                       </li>
@@ -2214,20 +2183,6 @@
         mainCarousel.sync(thumbnailsCarousel);
         mainCarousel.mount();
         thumbnailsCarousel.mount();
-
-        let mainCarouselTwo = new Splide("#proparty-carousel-2", {
-          rewind: true,
-          pagination: false,
-          perPage: 3,
-          gap: 20,
-          breakpoints: {
-            600: {
-              perPage: 2,
-            },
-          },
-        });
-
-        mainCarouselTwo.mount();
       });
     </script>
     <!-- Custom Js -->

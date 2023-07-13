@@ -2064,12 +2064,15 @@ header.type-2
   font-size: 25px;
   margin-bottom: 15px;
 }
-.discount_wrap .price .tg {
+.discount_wrap .price .tg,
+.discount_wrap .price .currency-symbol {
   font-size: 16px;
   font-weight: 500;
-  margin-left: 5px;
   display: inline-block;
   transform: translateY(-2px);
+}
+.discount_wrap .price .currency-symbol {
+  margin-right: 3px;
 }
 .payment-breakdown {
   margin-top: 28px;

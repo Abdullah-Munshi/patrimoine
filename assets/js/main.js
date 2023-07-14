@@ -200,4 +200,27 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("enquiry_form");
     const enquiryForm = new FormValidator(form);
   }
+
+  if (document.getElementById("sidebar") !== null) {
+    const sidebar = document.getElementById("sidebar");
+    // Function to be executed based on screen size
+    function executeBasedOnScreenSize() {
+      var screenWidth = window.innerWidth;
+      if (screenWidth < 1200) {
+        document
+          .querySelector("[data-insert-target-small]")
+          .insertAdjacentElement("afterend", sidebar);
+      } else {
+        document
+          .querySelector("[data-insert-target-big]")
+          .insertAdjacentElement("afterend", sidebar);
+      }
+    }
+
+    // Call the function on window resize
+    window.addEventListener("resize", executeBasedOnScreenSize);
+
+    // Call the function initially on page load
+    executeBasedOnScreenSize();
+  }
 }); // End line
